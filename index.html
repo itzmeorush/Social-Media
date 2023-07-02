@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+         <div class="nav-left">
+            <a href="index.html"> <img src="./images/logo.png" width="150px" class="logo" style="cursor: pointer;"></a>
+            <ul>
+                <li><img src="./images/notification.png" alt=""></li>
+                <li><img src="./images/inbox.png" alt=""></li>
+                <li><img src="./images/video.png" alt=""></li>
+            </ul>
+         </div>
+         <div class="nav-right">
+            <div class="search-box">
+                <img src="./images/search.png" alt="" class="search" width="18px" style="cursor: pointer;">
+                <input type="search" placeholder="search">
+            </div>
+            <div class="user-icon online" onclick="settingsMenuToggle()">
+                <img src="./images/profile-pic.png" alt="" width="35px">
+            </div>
+         </div>
+         <!-- ---------------settings-menu---------------->
+         <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img src="./images/profile-pic.png" alt="">
+                <div>
+                    <p style="font-size: 15px; color:#777;">John Nicholson</p>
+                  <a href="Profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+                <img src="./images/feedback.png" alt="">
+                <div>
+                    <p style="font-size: 15px; color: #777;">Give feedback</p>
+                    <a href="">help us to improve the new design</a>
+                </div>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <img src="./images/setting.png" alt="" class="settings-icon">
+                <a href="">Settings & Privacy <img src="./images/arrow.png" alt="" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="./images/help.png" alt="" class="settings-icon">
+                <a href="">Help & Support <img src="./images/arrow.png" alt="" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="./images/display.png" alt="" class="settings-icon">
+                <a href="">Display & Accessibility<img src="./images/arrow.png" alt="" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="./images/logout.png" alt="" class="settings-icon">
+                <a href="">Logout<img src="./images/arrow.png" alt="" width="10px"></a>
+            </div>
+        </div>
+        </div>
+    </nav>
+   
+   
+    <!-- -------------------main--------------->
+    <div class="container">
+        <!-- -----------left-sidebar------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href=""><img src="./images/news.png" >Latest News</a>
+                <a href=""><img src="./images/friends.png" >Friends</a>
+                <a href=""><img src="./images/group.png" >Group</a>
+                <a href=""><img src="./images/marketplace.png" >Market Places</a>
+                <a href=""><img src="./images/watch.png" >Watch</a>
+                <a href="">See more</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcut</p>
+               <a href=""> <img src="./images/shortcut-1.png" alt="">Web Developer</a>
+               <a href=""> <img src="./images/shortcut-2.png" alt="">Web Design Course</a>
+               <a href=""> <img src="./images/shortcut-2.png" alt="">Full Stack Developer</a>
+               <a href=""> <img src="./images/shortcut-4.png" alt="">Web Experts</a>
+            </div>
+        </div>
+        <!-- -------------main-content------------>
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./images/upload.png" class="upload">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="./images/member-1.png" alt="">
+                    <p>Samon</p>
+                </div>
+              
+                <div class="story story3">
+                    <img src="./images/member-3.png" alt="">
+                    <p>Alina</p>
+                </div>
+                <div class="story story4">
+                    <img src="./images/member-2.png" alt="">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story5">
+                    <img src="./images/member-4.png" alt="">
+                    <p>Kevin</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./images/profile-pic.png" alt="">
+                    <div>
+                        <p style="font-size: 15px;">John Nicholson</p>
+                        <small>Public <i class="fa-sharp fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea  rows="3" placeholder="What's on your mind"></textarea>
+                </div>
+                <div class="add-post-container">
+                    <a href=""><img src="./images/live-video.png" alt="">Live Video</a>
+                    <a href=""><img src="./images/photo.png" alt="">Photos/Video</a>
+                    <a href=""><img src="./images/feeling.png" alt="">Feelings</a>
+                </div>
+            </div>
+        
+            <div class="post-container">
+                <div class="post-row">
+                <div class="user-profile">
+                    <img src="./images/profile-pic.png" alt="" style="width: 40px;">
+                    <div>
+                        <p style="font-size: 15px;">John Nicholson</p>
+                        <span style="font-size: 12px; color:#9a9a9a;">June 24 2023, 13:40 pm</span>
+                    </div>
+                </div>
+                <a href=""><i class=" fas fa-ellipsis-v" style="color: #9a9a9a;"></i></a>
+               </div>
+               
+                <p style="font-size: 12px; margin-top: 8px;">I know the voices in my head aren't real, but sometimes their ideas are just too good to ignore. <a href=""  style="text-decoration: none; color: #1876f2;">#new</a> <a href="" style="text-decoration: none; color: #1876f2;">#viral</a></p>
+                <img src="./images/feed-image-1.png" width="100%" style="margin: 20px 0; border-radius: 4px;">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div>
+                            <a href=""><img src="./images/like-blue.png" alt="">120</a>
+                            <a href=""><img src="./images/comments.png" alt="">45</a>
+                            <a href=""><img src="./images/share.png" alt="">20</a>
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/profile-pic.png" 
+                        style="width: 20px; border-radius: 50%;"> 
+                        <i class="fa-sharp fa-solid fa-caret-down" style="margin-left:-10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                <div class="user-profile">
+                    <img src="./images/profile-pic.png" alt="" style="width: 40px;">
+                    <div>
+                        <p style="font-size: 15px;">John Nicholson</p>
+                        <span style="font-size: 12px; color:#9a9a9a;">June 24 2023, 13:40 pm</span>
+                    </div>
+                </div>
+                <a href=""><i class=" fas fa-ellipsis-v" style="color: #9a9a9a;"></i></a>
+               </div>
+               
+                <p style="font-size: 12px; margin-top: 8px;">I know the voices in my head aren't real, but sometimes their ideas are just too good to ignore. <a href=""  style="text-decoration: none; color: #1876f2;">#new</a> <a href="" style="text-decoration: none; color: #1876f2;">#viral</a></p>
+                <img src="./images/feed-image-2.png" width="100%" style="margin: 20px 0; border-radius: 4px;">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div>
+                            <a href=""><img src="./images/like.png" alt="">120</a>
+                            <a href=""><img src="./images/comments.png" alt="">45</a>
+                            <a href=""><img src="./images/share.png" alt="">20</a>
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/profile-pic.png" 
+                        style="width: 20px; border-radius: 50%;"> 
+                        <i class="fa-sharp fa-solid fa-caret-down" style="margin-left:-10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                <div class="user-profile">
+                    <img src="./images/profile-pic.png" alt="" style="width: 40px;">
+                    <div>
+                        <p style="font-size: 15px;">John Nicholson</p>
+                        <span style="font-size: 12px; color:#9a9a9a;">June 24 2023, 13:40 pm</span>
+                    </div>
+                </div>
+                <a href=""><i class=" fas fa-ellipsis-v" style="color: #9a9a9a;"></i></a>
+               </div>
+               
+                <p style="font-size: 12px; margin-top: 8px;">I know the voices in my head aren't real, but sometimes their ideas are just too good to ignore. <a href=""  style="text-decoration: none; color: #1876f2;">#new</a> <a href="" style="text-decoration: none; color: #1876f2;">#viral</a></p>
+                <img src="./images/feed-image-3.png" width="100%" style="margin: 20px 0; border-radius: 4px;">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div>
+                            <a href=""><img src="./images/like.png" alt="">120</a>
+                            <a href=""><img src="./images/comments.png" alt="">45</a>
+                            <a href=""><img src="./images/share.png" alt="">20</a>
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/profile-pic.png" 
+                        style="width: 20px; border-radius: 50%;"> 
+                        <i class="fa-sharp fa-solid fa-caret-down" style="margin-left:-10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                <div class="user-profile">
+                    <img src="./images/profile-pic.png" alt="" style="width: 40px;">
+                    <div>
+                        <p style="font-size: 15px;">John Nicholson</p>
+                        <span style="font-size: 12px; color:#9a9a9a;">June 24 2023, 13:40 pm</span>
+                    </div>
+                </div>
+                <a href=""><i class=" fas fa-ellipsis-v" style="color: #9a9a9a;"></i></a>
+               </div>
+               
+                <p style="font-size: 12px; margin-top: 8px;">I know the voices in my head aren't real, but sometimes their ideas are just too good to ignore. <a href=""  style="text-decoration: none; color: #1876f2;">#new</a> <a href="" style="text-decoration: none; color: #1876f2;">#viral</a></p>
+                <img src="./images/feed-image-4.png" width="100%" style="margin: 20px 0; border-radius: 4px;">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div>
+                            <a href=""><img src="./images/like.png" alt="">120</a>
+                            <a href=""><img src="./images/comments.png" alt="">45</a>
+                            <a href=""><img src="./images/share.png" alt="">20</a>
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/profile-pic.png" 
+                        style="width: 20px; border-radius: 50%;"> 
+                        <i class="fa-sharp fa-solid fa-caret-down" style="margin-left:-10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                <div class="user-profile">
+                    <img src="./images/profile-pic.png" alt="" style="width: 40px;">
+                    <div>
+                        <p style="font-size: 15px;">John Nicholson</p>
+                        <span style="font-size: 12px; color:#9a9a9a;">June 24 2023, 13:40 pm</span>
+                    </div>
+                </div>
+                <a href=""><i class=" fas fa-ellipsis-v" style="color: #9a9a9a;"></i></a>
+               </div>
+               
+                <p style="font-size: 12px; margin-top: 8px;">I know the voices in my head aren't real, but sometimes their ideas are just too good to ignore. <a href=""  style="text-decoration: none; color: #1876f2;">#new</a> <a href="" style="text-decoration: none; color: #1876f2;">#viral</a></p>
+                <img src="./images/feed-image-5.png" width="100%" style="margin: 20px 0; border-radius: 4px;">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div>
+                            <a href=""><img src="./images/like.png" alt="">120</a>
+                            <a href=""><img src="./images/comments.png" alt="">45</a>
+                            <a href=""><img src="./images/share.png" alt="">20</a>
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/profile-pic.png" 
+                        style="width: 20px; border-radius: 50%;"> 
+                        <i class="fa-sharp fa-solid fa-caret-down" style="margin-left:-10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        
+
+     
+        <!-- -----------------right-sidebar----------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="">More Info</a>
+                </div>
+                
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="">Close</a>
+            </div>
+            <div><img src="./images/advertisement.png" width="100%" style="border-radius:4px; margin-bottom: 13px;">
+            </div>
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-2.png" alt="">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-3.png" alt="">
+                </div>
+                <p>Samona Lisa</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-4.png" alt="">
+                </div>
+                <p>Kevin Mina</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+<div class="footer">
+    <p>Copyright &copy; 2023. Deepanshu</p>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
